@@ -114,7 +114,7 @@ function SectionTitle({ Title }) {
 function DownloadCv() {
   return (
     <button className="download-cv">
-      <a href={cv} download="Shehab Ahmed_front-end.pdf">
+      <a href={cv} download="Shehab Ahmed Front end.pdf">
         <span>Download CV</span>
         <span>
           <FaDownload />
