@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
-import cv from "../assets/Shehab Ahmed_front-end developer.pdf";
+import cv from "../assets/Shehab Ahmed Front end.pdf";
 /**** img ****/
 import shehab4 from "../assets/images/shehab4.jpg";
 import banner from "../assets/images/shehab1_1.png";
