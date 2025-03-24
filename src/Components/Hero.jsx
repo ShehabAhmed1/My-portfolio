@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
-import cv from "../assets/Shehab Ahmed Front end.pdf";
+import cv from "../assets/Shehab Ahmed Front-end.pdf";
 /**** img ****/
 import shehab4 from "../assets/images/shehab4.jpg";
 import banner from "../assets/images/shehab1_1.png";
@@ -114,7 +114,7 @@ function SectionTitle({ Title }) {
 function DownloadCv() {
   return (
     <button className="download-cv">
-      <a href={cv} download="Shehab Ahmed Front end.pdf">
+      <a href={cv} download="Shehab Ahmed Front-end.pdf">
         <span>Download CV</span>
         <span>
           <FaDownload />
