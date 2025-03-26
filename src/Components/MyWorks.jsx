@@ -14,6 +14,7 @@ import resturant from "../assets/images/resturant/resturant1.png";
 import cryptex from "../assets/images/cryptex/cryptix1.png";
 import note from "../assets/images/note/note1.png";
 import kasper from "../assets/images/kasper/kasper.png";
+import youtubeClone from "../assets/images/youtube-clone/youtube-clone.png";
 // import personalwebsite from "../assets/images/personal_website/personalwebsite1.png";
 import typing from "../assets/images/typing/typing.png";
 
@@ -23,6 +24,14 @@ import { FaFilter } from "react-icons/fa6";
 import { FaFilterCircleXmark } from "react-icons/fa6";
 /*** options ***/
 const works = [
+  {
+    img: youtubeClone,
+    title: "Youtube-clone",
+    description:
+      "YouTube Clone is a React-based web app built with Vite, using the YouTube API to fetch video data. It showcases my skills in HTML, CSS, JavaScript, React, and API integration, focusing on performance and responsiveness.",
+    projectLink: "https://shehabahmed1.github.io/Youtube-clone/",
+    technology: ["Reactjs", "Static", "All", 2025, "API"],
+  },
   {
     img: organica,
     title: "Organica E-commerce",
@@ -94,14 +103,6 @@ const works = [
     projectLink: " https://shehabahmed1.github.io/typing-test/",
     technology: ["Native", "Static", "All", 2024],
   },
-  // {
-  //   img: personalwebsite,
-  //   title: "personal website",
-  //   description:
-  //     "A simple personal website to show your skills ,memories and your events",
-  //   projectLink: "https://shehabahmed1.github.io/Note-App/",
-  //   technology: ["Native", "Static", "All", 2024],
-  // },
 ];
 
 // let numofprojects = 2;
