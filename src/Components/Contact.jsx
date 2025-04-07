@@ -22,7 +22,7 @@ const socialLinks = [
     alt: "GitHub",
   },
   {
-    href: "linkedin.com/in/shehab-ahmed-553102276",
+    href: "https://www.linkedin.com/in/shehab-ahmed-553102276",
     icon: <TiSocialLinkedinCircular />,
     alt: "LinkedIn",
   },
