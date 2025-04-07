@@ -96,11 +96,14 @@ function Aboutinfo() {
       whileInView="animate"
     >
       <p className="about-me">
-        Welcome! I&apos;m <span className="my-name">shehab Ahmed</span>, a
-        professional web developer with a knack for crafting visually stunning
-        and highly functional websites. Combining creativity and technical
-        expertise. I transform your vision into digital masterpiece that excels
-        in both appearance and performance.
+        Welcome! I&apos;m <span className="my-name">shehab Ahmed</span>,
+        Results-driven Front-End Developer with a solid background in HTML, CSS,
+        JavaScript, and Reactjs. Experienced in developing responsive,
+        user-friendly, and interactive web applications. Strong problem-solving
+        abilities, teamwork skills, and project management experience through
+        academic projects, volunteer leadership roles, and competitive
+        programming. Passionate about modern web technologies, UI/UX best
+        practices, and performance optimization.
       </p>
       <div className="my-progress">
         <div className="all-units">

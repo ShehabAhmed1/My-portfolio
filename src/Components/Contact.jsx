@@ -22,20 +22,15 @@ const socialLinks = [
     alt: "GitHub",
   },
   {
-    href: "#",
+    href: "linkedin.com/in/shehab-ahmed-553102276",
     icon: <TiSocialLinkedinCircular />,
     alt: "LinkedIn",
   },
   {
-    href: "#",
+    href: "https://www.facebook.com/me/",
     icon: <FaFacebook />,
     alt: "Facebook",
   },
-  //   {
-  //     href: "#",
-  //     icon: khamsat,
-  //     alt: "khamsat",
-  //   },
 ];
 
 /* spin 360deg animation */
