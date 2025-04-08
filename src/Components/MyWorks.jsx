@@ -24,14 +24,14 @@ import { FaFilter } from "react-icons/fa6";
 import { FaFilterCircleXmark } from "react-icons/fa6";
 /*** options ***/
 const works = [
-  {
-    img: youtubeClone,
-    title: "Youtube-clone",
-    description:
-      "YouTube Clone is a React-based web app built with Vite, using the YouTube API to fetch video data. It showcases my skills in HTML, CSS, JavaScript, React, and API integration, focusing on performance and responsiveness.",
-    projectLink: "https://shehabahmed1.github.io/Youtube-clone/",
-    technology: ["Reactjs", "Static", "All", 2025, "API"],
-  },
+  // {
+  //   img: youtubeClone,
+  //   title: "Youtube-clone",
+  //   description:
+  //     "YouTube Clone is a React-based web app built with Vite, using the YouTube API to fetch video data. It showcases my skills in HTML, CSS, JavaScript, React, and API integration, focusing on performance and responsiveness.",
+  //   projectLink: "https://shehabahmed1.github.io/Youtube-clone/",
+  //   technology: ["Reactjs", "Static", "All", 2025, "API"],
+  // },
   {
     img: organica,
     title: "Organica E-commerce",
