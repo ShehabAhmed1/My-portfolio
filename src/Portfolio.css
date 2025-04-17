@@ -513,10 +513,31 @@ nav .nav-content .contact-me {
   padding: var(--sectionpadding);
 }
 .feedback-content {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+.feedback-content .reviews,
+.feedback-content .feed-img,
+.feedback-content .feed-videos {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
+  gap: 15px;
 }
+.feedback-content .feed-title {
+  width: 100%;
+  text-align: center;
+  padding: 5px;
+  background-color: var(--babyblue1);
+  color: var(--white);
+  margin: 30px 0;
+}
+.feedback-content .feed-img img,
+.feedback-content .feed-videos video {
+  width: 100%;
+  border-radius: 10px;
+}
+
 .feedback-content .temporary {
   margin: 20px 0;
   text-align: center;
@@ -615,6 +636,20 @@ nav .nav-content .contact-me {
 .contact {
   padding: var(--sectionpadding);
 }
+.contact .whatsup {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  bottom: 12px;
+  right: 13px;
+  font-size: 40px;
+  padding: 5px;
+  color: #03e003;
+  background-color: var(--white);
+  border-radius: 50%;
+  z-index: 1000;
+}
 .contact-content {
   display: flex;
   flex-wrap: wrap;
@@ -699,6 +734,7 @@ form label textarea:focus {
 }
 .contact-content form label textarea {
   height: 150px;
+  width: 100% !important;
 }
 .contact-content form input[type="submit"] {
   background-color: var(--babyblue1);
@@ -856,6 +892,18 @@ footer .rights p {
   /**end work Component**/
 
   /**start feedback Component**/
+
+  .feedback-content .feedback-block {
+    width: calc(50% - 15px);
+  }
+  .feedback-content .feed-title {
+    width: 200px;
+    text-align: left;
+  }
+  .feedback-content .feed-img img,
+  .feedback-content .feed-videos video {
+    width: calc(50% - 15px);
+  }
   /**end feedback Component**/
 
   /**start contact Component**/
@@ -906,6 +954,14 @@ footer .rights p {
   /**end work Component**/
 
   /**start feedback Component**/
+
+  .feedback-content .feedback-block {
+    width: calc((100% / 3) - 15px);
+  }
+  .feedback-content .feed-img img,
+  .feedback-content .feed-videos video {
+    width: calc((100% / 3) - 15px);
+  }
   /**end feedback Component**/
 
   /**start contact Component**/

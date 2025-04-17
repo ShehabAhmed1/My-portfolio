@@ -12,6 +12,7 @@ import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { TiSocialLinkedinCircular } from "react-icons/ti";
 import { FaFacebook } from "react-icons/fa";
+import { IoLogoWhatsapp } from "react-icons/io";
 import { button } from "framer-motion/client";
 
 /*** options ***/
@@ -51,6 +52,7 @@ const spining = (duration) => {
 function Contact() {
   return (
     <section className="contact" id="contact">
+      <Whatsup />
       <div className="main-container">
         <motion.div
           className="contact-content"
@@ -151,6 +153,15 @@ function ContactMe() {
     <button className="contact-me">
       <a href="#contact">conatct me</a>
     </button>
+  );
+}
+
+/***** whatsup ******/
+function Whatsup() {
+  return (
+    <a className="whatsup" href="https://wa.me/+201272073227?" target="_blank">
+      <IoLogoWhatsapp />
+    </a>
   );
 }
 export { Contact, socialLinks, ContactMe };
