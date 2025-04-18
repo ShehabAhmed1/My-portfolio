@@ -18,11 +18,29 @@ import youtubeClone from "../assets/images/youtube-clone/youtube-clone.png";
 // import personalwebsite from "../assets/images/personal_website/personalwebsite1.png";
 import typing from "../assets/images/typing/typing.png";
 
-/*** icons */
+/*********** icons *************/
 import { ImArrowUpRight2 } from "react-icons/im";
 import { FaFilter } from "react-icons/fa6";
 import { FaFilterCircleXmark } from "react-icons/fa6";
-/*** options ***/
+/************ animations ************/
+
+/** move right animation that happen when hover above arrow */
+const moveright = (duration) => {
+  return {
+    initial: { rotate: 0, x: 0 },
+    hover: {
+      rotate: [45, 45, 45],
+      x: [0, 5, 0],
+      transition: {
+        duration: duration,
+        repeat: Infinity,
+        repeatType: "reverse",
+      },
+    },
+  };
+};
+
+/********** options *************/
 const works = [
   // {
   //   img: youtubeClone,
@@ -104,23 +122,6 @@ const works = [
     technology: ["Native", "Static", "All", 2024],
   },
 ];
-
-// let numofprojects = 2;
-/** move right animation that happen when hover above arrow */
-const moveright = (duration) => {
-  return {
-    initial: { rotate: 0, x: 0 },
-    hover: {
-      rotate: [45, 45, 45],
-      x: [0, 5, 0],
-      transition: {
-        duration: duration,
-        repeat: Infinity,
-        repeatType: "reverse",
-      },
-    },
-  };
-};
 
 function MyWorks() {
   const [filter, Setfilter] = useState("All");
@@ -209,6 +210,7 @@ function Filter({ Setfilter }) {
     </div>
   );
 }
+
 function FilterList({ Setfilter }) {
   return (
     <ul>
@@ -255,6 +257,9 @@ function FilterList({ Setfilter }) {
     </ul>
   );
 }
+
+import { useEffect } from "react";
+
 function Projects({
   work,
   filter,
@@ -269,9 +274,14 @@ function Projects({
     project.technology.includes(filter)
   );
 
-  projectsfalge
-    ? Setprojectnumshow(filteredProjects.length)
-    : Setprojectnumshow(2);
+  // Safe: run after render
+  useEffect(() => {
+    if (projectsfalge) {
+      Setprojectnumshow(filteredProjects.length);
+    } else {
+      Setprojectnumshow(2);
+    }
+  }, [projectsfalge, filteredProjects.length]); // add dependencies here
 
   return (
     <div className="projects">
@@ -279,9 +289,7 @@ function Projects({
         delaytime += 0.1;
         return projectnumshow > index ? (
           <ProjectUnit key={index} project={project} delaytime={delaytime} />
-        ) : (
-          ""
-        );
+        ) : null;
       })}
     </div>
   );

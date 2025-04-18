@@ -641,7 +641,7 @@ nav .nav-content .contact-me {
   align-items: center;
   justify-content: center;
   position: fixed;
-  bottom: 12px;
+  bottom: 13px;
   right: 13px;
   font-size: 40px;
   padding: 5px;
@@ -705,10 +705,12 @@ nav .nav-content .contact-me {
   flex-wrap: wrap;
   gap: 10px;
   margin-top: 50px;
+  position: relative;
+  justify-content: space-between;
 }
 .contact-content form label {
   color: var(--white);
-  width: calc(100% / 2 - 20px);
+  width: calc(100% / 2 - 10px);
 }
 .contact-content form label:nth-child(3),
 form label:nth-child(4) {
@@ -750,6 +752,37 @@ form label textarea:focus {
   box-shadow: 0 0 8px 1px var(--babyblue2);
 }
 
+.contact-content form .error-box {
+  width: 280px;
+  background-color: var(--black1);
+  padding: 85px 20px 85px 20px;
+  border-radius: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.contact-content form .error-box .close-icon {
+  width: fit-content;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  font-size: 25px;
+  color: red;
+  cursor: pointer;
+  background-color: var(--black2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  border-radius: 50%;
+}
+.contact-content form .error-box p {
+  color: red;
+  font-size: 20px;
+  font-weight: bold;
+}
 /***********  end contact Component ***************/
 
 /***********  start footer Component ***************/
@@ -965,6 +998,10 @@ footer .rights p {
   /**end feedback Component**/
 
   /**start contact Component**/
+  .contact .whatsup {
+    bottom: 20px;
+    right: 20px;
+  }
   /**end contact Component**/
 
   /**start footer Component**/

@@ -13,7 +13,7 @@ import { FaLinkedin } from "react-icons/fa";
 import { TiSocialLinkedinCircular } from "react-icons/ti";
 import { FaFacebook } from "react-icons/fa";
 import { IoLogoWhatsapp } from "react-icons/io";
-import { button } from "framer-motion/client";
+import { IoClose } from "react-icons/io5";
 
 /*** options ***/
 const socialLinks = [
@@ -31,6 +31,11 @@ const socialLinks = [
     href: "https://www.facebook.com/me/",
     icon: <FaFacebook />,
     alt: "Facebook",
+  },
+  {
+    href: "https://wa.me/+201272073227?",
+    icon: <IoLogoWhatsapp />,
+    alt: "whatsup",
   },
 ];
 
@@ -101,6 +106,12 @@ function ContactInfo() {
 
 /** the form to contact with you **/
 function ContactForm() {
+  const [name, setName] = useState("");
+  const [phone, setPhone] = useState("");
+  const [email, setEmail] = useState("");
+  const [request, setRequest] = useState("");
+  const [error, setError] = useState("");
+
   return (
     <form action="https://formsubmit.co/sa2315144@gmail.com" method="POST">
       <label htmlFor="name">
@@ -110,7 +121,10 @@ function ContactForm() {
           name="name"
           id="name"
           required
-          placeholder="shehab Ahmed"
+          placeholder="Enter your name"
+          onChange={(event) => {
+            setName(event.target.value);
+          }}
         />
       </label>
       <label htmlFor="phone">
@@ -120,7 +134,10 @@ function ContactForm() {
           name="phone"
           id="phone"
           required
-          placeholder="01272073227"
+          placeholder="your phone"
+          onChange={(event) => {
+            setPhone(event.target.value);
+          }}
         />
       </label>
       <label htmlFor="phone">
@@ -130,7 +147,10 @@ function ContactForm() {
           name="email"
           id="email"
           required
-          placeholder="sa2315144@gmail.com"
+          placeholder="your email"
+          onChange={(event) => {
+            setEmail(event.target.value);
+          }}
         />
       </label>
       <label htmlFor="message">
@@ -139,10 +159,20 @@ function ContactForm() {
           name="subject"
           id="message"
           required
-          placeholder="Hi!"
+          placeholder="Write what you need, and add any link you want me to check."
+          onChange={(event) => {
+            setRequest(event.target.value);
+          }}
         ></textarea>
       </label>
-      <input type="submit" value="send" />
+      <input
+        type="submit"
+        value="send"
+        onClick={(event) => {
+          setError(formvalidation(name, phone, email, request, event));
+        }}
+      />
+      {error != "" ? <FormErrors error={error} setError={setError} /> : ""}
     </form>
   );
 }
@@ -156,7 +186,7 @@ function ContactMe() {
   );
 }
 
-/***** whatsup ******/
+/***** whatsup icon ******/
 function Whatsup() {
   return (
     <a className="whatsup" href="https://wa.me/+201272073227?" target="_blank">
@@ -164,4 +194,42 @@ function Whatsup() {
     </a>
   );
 }
+
+/**** error box ****/
+function FormErrors({ error, setError }) {
+  return (
+    <div className="error-box">
+      <div
+        className="close-icon"
+        onClick={() => {
+          setError("");
+        }}
+      >
+        <IoClose />
+      </div>
+      <p>{error}</p>
+    </div>
+  );
+}
+
+/** function form validation **/
+function formvalidation(name, phone, email, request, event) {
+  const phonePatter = /^(010||011||012||015)[0-9]{8}$/;
+  //check the name
+  if (name.length < 7 || !name.includes(" ")) {
+    event.preventDefault();
+    return "please enter real name.";
+    //check the phone
+  } else if (!phonePatter.test(phone)) {
+    event.preventDefault();
+    return "Please enter the correct phone number or click on the WhatsApp icon.";
+    //check the request
+  } else if (request.length < 20 || !request.includes(" ")) {
+    event.preventDefault();
+    return "Your request seems unclear or needs more details .";
+  } else {
+    return "";
+  }
+}
+
 export { Contact, socialLinks, ContactMe };
