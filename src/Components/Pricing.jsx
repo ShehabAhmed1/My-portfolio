@@ -57,7 +57,7 @@ const plans = [
 
 function Pricing() {
   return (
-    <section className="Pricing">
+    <section className="Pricing" id="Pricing">
       <span className="new">new</span>
       <div className="main-container">
         <div className="pricing-content">

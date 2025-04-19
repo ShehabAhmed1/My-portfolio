@@ -40,6 +40,12 @@ const navItems = [
     className: "nav-link",
   },
   {
+    label: "Pricing",
+    link: "#Pricing",
+    icon: <FaComments />,
+    className: "nav-link",
+  },
+  {
     label: "Questions",
     link: "#questions",
     icon: <FaComments />,
