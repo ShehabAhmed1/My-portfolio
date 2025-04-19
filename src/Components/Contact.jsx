@@ -169,7 +169,7 @@ function ContactForm() {
         type="submit"
         value="send"
         onClick={(event) => {
-          setError(formvalidation(name, phone, email, request, event));
+          setError(formValidation(name, phone, email, request, event));
         }}
       />
       {error != "" ? <FormErrors error={error} setError={setError} /> : ""}
@@ -213,23 +213,28 @@ function FormErrors({ error, setError }) {
 }
 
 /** function form validation **/
-function formvalidation(name, phone, email, request, event) {
-  const phonePatter = /^(010||011||012||015)[0-9]{8}$/;
+function formValidation(name, phone, email, request, event) {
+  console.log(name, phone);
+  const phonePatter = /^(010|011|012|015)[0-9]{8}$/;
   //check the name
   if (name.length < 7 || !name.includes(" ")) {
     event.preventDefault();
     return "please enter real name.";
-    //check the phone
-  } else if (!phonePatter.test(phone)) {
+  }
+
+  //check the phone
+  if (!phonePatter.test(phone)) {
     event.preventDefault();
-    return "Please enter the correct phone number or click on the WhatsApp icon.";
-    //check the request
-  } else if (request.length < 20 || !request.includes(" ")) {
+    return "Please enter a valid Egyptian phone number or use the WhatsApp icon.";
+  }
+
+  //check the request
+  if (request.length < 20 || !request.includes(" ")) {
     event.preventDefault();
     return "Your request seems unclear or needs more details .";
-  } else {
-    return "";
   }
+
+  return "";
 }
 
 export { Contact, socialLinks, ContactMe };

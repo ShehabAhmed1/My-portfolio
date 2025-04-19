@@ -585,6 +585,135 @@ nav .nav-content .contact-me {
 
 /***********  end feedback Component ***************/
 
+/************ start Pricing component **************/
+.Pricing {
+  padding: 50px 0;
+}
+.Pricing .new {
+  color: var(--white);
+  background-color: red;
+  padding: 5px 30px;
+  position: absolute;
+  right: 0;
+  text-align: center;
+}
+.pricing-header {
+  margin: 20px 0;
+}
+.pricing-header p {
+  font-size: 1.1rem;
+  color: var(--textcolor);
+}
+.plansContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-bottom: 4rem;
+}
+.planCard {
+  background: var(--black1);
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s linear;
+  position: relative;
+  border: 1px solid var(--babyblue1);
+  cursor: pointer;
+}
+.planCard:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
+}
+.highlighted {
+  transform: scale(1.02);
+  border: 3px solid var(--babyblue1);
+  box-shadow: 0 10px 18px 3px rgb(155 135 245 / 34%);
+}
+.planHeader {
+  text-align: center;
+  margin-bottom: 2rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid #eee;
+}
+.planHeader h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--textcolor);
+  margin-bottom: 1rem;
+}
+.price {
+  font-size: 2.25rem;
+  font-weight: 700;
+  color: var(--textcolor);
+  margin-bottom: 0.5rem;
+}
+.timeframe {
+  font-size: 0.9rem;
+  color: var(--textcolor);
+}
+.features {
+  margin-bottom: 2rem;
+}
+.features li {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+  color: var(--textcolor);
+  font-size: 0.95rem;
+}
+.checkIcon {
+  color: var(--babyblue1);
+  flex-shrink: 0;
+}
+.ctaButton {
+  width: 100%;
+  display: block;
+  text-align: center;
+  padding: 0.875rem;
+  background: var(--babyblue1);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.ctaButton:hover {
+  background: var(--onlineColor);
+}
+.notes {
+  margin-top: 3rem;
+}
+.notes .note {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin: 1rem 0;
+  font-size: 0.95rem;
+  border-radius: 5px;
+  padding: 15px 10px;
+  background-color: var(--black1);
+  color: var(--white);
+  border: 2px solid #27bc6c;
+}
+.notes .note.important {
+  border: 1px solid gold;
+}
+.notes .note-icons svg {
+  color: var(--onlineColor);
+  font-size: 30px;
+}
+.notes .note-icons svg.important {
+  color: gold;
+}
+.notes .note p {
+  line-height: 25px;
+}
+
+/************ end Pricing component **************/
+
 /***********  start questions Component ***************/
 .questions {
   padding: var(--sectionpadding);
@@ -939,6 +1068,27 @@ footer .rights p {
   }
   /**end feedback Component**/
 
+  /** start pricing component **/
+
+  .header h2 {
+    font-size: 2rem;
+  }
+
+  .plansContainer {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .notes .note {
+    flex-direction: row;
+  }
+  .notes .note .note-icons {
+    width: 65px;
+  }
+  .notes .note p {
+    width: calc(100% - 80px);
+  }
+  /** end pricing component **/
+
   /**start contact Component**/
   .contact .contact-content .contact-info {
     width: calc(100% / 2 - 20px);
@@ -996,6 +1146,14 @@ footer .rights p {
     width: calc((100% / 3) - 15px);
   }
   /**end feedback Component**/
+
+  /** start pricing component **/
+
+  .plansContainer {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  /** end pricing component **/
 
   /**start contact Component**/
   .contact .whatsup {
