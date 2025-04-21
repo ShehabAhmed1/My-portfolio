@@ -17,6 +17,7 @@ import kasper from "../assets/images/kasper/kasper.png";
 import youtubeClone from "../assets/images/youtube-clone/youtube-clone.png";
 // import personalwebsite from "../assets/images/personal_website/personalwebsite1.png";
 import typing from "../assets/images/typing/typing.png";
+import NoteSystem from "../assets/images/NoteSystem/NoteSystem.png";
 
 /*********** icons *************/
 import { ImArrowUpRight2 } from "react-icons/im";
@@ -42,14 +43,14 @@ const moveright = (duration) => {
 
 /********** options *************/
 const works = [
-  // {
-  //   img: youtubeClone,
-  //   title: "Youtube-clone",
-  //   description:
-  //     "YouTube Clone is a React-based web app built with Vite, using the YouTube API to fetch video data. It showcases my skills in HTML, CSS, JavaScript, React, and API integration, focusing on performance and responsiveness.",
-  //   projectLink: "https://shehabahmed1.github.io/Youtube-clone/",
-  //   technology: ["Reactjs", "Static", "All", 2025, "API"],
-  // },
+  {
+    img: NoteSystem,
+    title: "Note-System",
+    description:
+      "This is a structured note-taking system that categorizes notes into distinct groups. Each category includes a note title and its corresponding content. The platform is divided into two main sections: one dedicated to adding new notes, and another designed to present the notes in an organized and visually engaging manner.",
+    projectLink: "https://shehabahmed1.github.io/NoteSystem/",
+    technology: ["Reactjs", "Static", "All", 2025],
+  },
   {
     img: organica,
     title: "Organica E-commerce",
