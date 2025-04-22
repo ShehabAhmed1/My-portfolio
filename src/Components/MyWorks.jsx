@@ -18,6 +18,7 @@ import youtubeClone from "../assets/images/youtube-clone/youtube-clone.png";
 // import personalwebsite from "../assets/images/personal_website/personalwebsite1.png";
 import typing from "../assets/images/typing/typing.png";
 import NoteSystem from "../assets/images/NoteSystem/NoteSystem.png";
+import mostafa_001 from "../assets/images/Mostafa_001/mostafa_001.png";
 
 /*********** icons *************/
 import { ImArrowUpRight2 } from "react-icons/im";
@@ -44,6 +45,22 @@ const moveright = (duration) => {
 /********** options *************/
 const works = [
   {
+    img: mostafa_001,
+    title: "mostafa Kamal portfolio",
+    description:
+      "An educational platform offering online courses with a structured layout, course previews, and interactive UI built with React.",
+    projectLink: "https://shehabahmed1.github.io/portfolio-mostafa-001/",
+    technology: ["Reactjs", "Animation", "All", 2025],
+  },
+  {
+    img: onlineCourse,
+    title: "Online Course Website",
+    description:
+      "An educational platform offering online courses with a structured layout, course previews, and interactive UI built with React.",
+    projectLink: "https://shehabahmed1.github.io/onlineCourses-Reactjs/",
+    technology: ["Reactjs", "Animation", "All", 2025],
+  },
+  {
     img: NoteSystem,
     title: "Note-System",
     description:
@@ -58,14 +75,6 @@ const works = [
       "A modern e-commerce website for organic products, featuring a clean UI, product filtering, and a responsive design.",
     projectLink: "https://shehabahmed1.github.io/Organica/",
     technology: ["Native", "Static", "All", 2025],
-  },
-  {
-    img: onlineCourse,
-    title: "Online Course Website",
-    description:
-      "An educational platform offering online courses with a structured layout, course previews, and interactive UI built with React.",
-    projectLink: "https://shehabahmed1.github.io/onlineCourses-Reactjs/",
-    technology: ["Reactjs", "Animation", "All", 2025],
   },
   {
     img: realestates,
