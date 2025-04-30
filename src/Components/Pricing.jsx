@@ -8,8 +8,8 @@ import { BsStars } from "react-icons/bs";
 const plans = [
   {
     title: "Basic",
-    price: "800 – 1200 EGP",
-    timeframe: "2 – 4 days",
+    price: "20 $ – 30 $",
+    timeframe: "2 – 3 days",
     features: [
       "Single page (Landing Page)",
       "Basic UI/UX design included",
@@ -22,8 +22,8 @@ const plans = [
   },
   {
     title: "Standard",
-    price: "1500 – 2200 EGP",
-    timeframe: "5 – 8 days",
+    price: "40$ – 60$ ",
+    timeframe: "4 – 6 days",
     features: [
       "Multi-page website using React Router",
       "Custom UI/UX design included",
@@ -39,7 +39,7 @@ const plans = [
   },
   {
     title: "Pro",
-    price: "3500 – 4500 EGP",
+    price: "80$ – 100$ ",
     timeframe: "7 – 14 days",
     features: [
       "Fully dynamic multi-page site with React",
