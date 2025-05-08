@@ -15,7 +15,7 @@ import cryptex from "../assets/images/cryptex/cryptix1.png";
 import note from "../assets/images/note/note1.png";
 import kasper from "../assets/images/kasper/kasper.png";
 import youtubeClone from "../assets/images/youtube-clone/youtube-clone.png";
-// import personalwebsite from "../assets/images/personal_website/personalwebsite1.png";
+import DarAlquran from "../assets/images/DarAlQuran/DarAlQuran.png";
 import typing from "../assets/images/typing/typing.png";
 import NoteSystem from "../assets/images/NoteSystem/NoteSystem.png";
 import mostafa_001 from "../assets/images/Mostafa_001/mostafa_001.png";
@@ -50,6 +50,14 @@ const works = [
     description:
       "An educational platform offering online courses with a structured layout, course previews, and interactive UI built with React.",
     projectLink: "https://shehabahmed1.github.io/portfolio-mostafa-001/",
+    technology: ["Reactjs", "Animation", "All", 2025],
+  },
+  {
+    img: DarAlquran,
+    title: "DarAlQuran_System",
+    description:
+      "DarAlQuran_System is a personalized web-based tool I developed to serve the specific needs of my Quran memorization work. It helps me track student progress, organize internal competitions, and store a complete history of performance reports. Each student has a dedicated notes section linked by their unique ID. The system also includes a page to listen to Quran recitations by Sheikh Al-Husary — all tailored to support my workflow and make student follow-up easier and more efficient.",
+    projectLink: "https://shehabahmed1.github.io/DarAlQuranSystem/",
     technology: ["Reactjs", "Animation", "All", 2025],
   },
   {
