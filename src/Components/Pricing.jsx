@@ -74,7 +74,7 @@ function Pricing() {
               >
                 <div className="planHeader">
                   <h3>{plan.title}</h3>
-                  <div className="price">{plan.price}</div>
+                  {/* <div className="price">{plan.price}</div> */}
                   <div className="timeframe">Delivery: {plan.timeframe}</div>
                 </div>
                 <ul className="features">
