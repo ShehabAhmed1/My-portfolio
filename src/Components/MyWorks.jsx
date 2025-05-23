@@ -19,7 +19,13 @@ import DarAlquran from "../assets/images/DarAlQuran/DarAlQuran.png";
 import typing from "../assets/images/typing/typing.png";
 import NoteSystem from "../assets/images/NoteSystem/NoteSystem.png";
 import mostafa_001 from "../assets/images/Mostafa_001/mostafa_001.png";
-
+import City_library from "../assets/images/City-Library/city_library.png";
+import css from "../assets/images/css3.svg";
+import js from "../assets/images/javascript.svg";
+import react from "../assets/images/react.svg";
+import framer from "../assets/images/framer-motion.svg";
+import html from "../assets/images/html-5.svg";
+import reactQuery from "../assets/images/react-query.svg";
 /*********** icons *************/
 import { ImArrowUpRight2 } from "react-icons/im";
 import { FaFilter } from "react-icons/fa6";
@@ -45,12 +51,22 @@ const moveright = (duration) => {
 /********** options *************/
 const works = [
   {
-    img: mostafa_001,
-    title: "mostafa Kamal portfolio",
+    img: City_library,
+    title: "City_library",
     description:
-      "An educational platform offering online courses with a structured layout, course previews, and interactive UI built with React.",
+      "The City Library website is a modern, user-friendly platform designed to provide easy access to library services, resources, and information. It allows users to search the library catalog and access digital collections such as eBooks and audiobooks. The website also features event calendars, reading recommendations, membership registration, and dedicated sections for children, teens, and researchers. With a responsive design and accessibility in mind, the site ensures that all users can explore the library’s offerings anytime, anywhere.",
+    projectLink: " https://shehabahmed1.github.io/City_Library/",
+    technology: ["Reactjs", "Animation", "All", 2025],
+    technologysvg: [html, css, js, react, framer, reactQuery],
+  },
+  {
+    img: mostafa_001,
+    title: "Mostafa Kamal Portfolio",
+    description:
+      "A personal portfolio website showcasing Mostafa Kamal's work. Built with React, it features a clean layout, smooth animations, and interactive UI elements. The site serves as both an educational showcase and a professional profile.",
     projectLink: "https://shehabahmed1.github.io/portfolio-mostafa-001/",
     technology: ["Reactjs", "Animation", "All", 2025],
+    technologysvg: [html, css, js, react, framer],
   },
   {
     img: DarAlquran,
@@ -59,6 +75,7 @@ const works = [
       "DarAlQuran_System is a personalized web-based tool I developed to serve the specific needs of my Quran memorization work. It helps me track student progress, organize internal competitions, and store a complete history of performance reports. Each student has a dedicated notes section linked by their unique ID. The system also includes a page to listen to Quran recitations by Sheikh Al-Husary — all tailored to support my workflow and make student follow-up easier and more efficient.",
     projectLink: "https://shehabahmed1.github.io/DarAlQuranSystem/",
     technology: ["Reactjs", "Animation", "All", 2025],
+    technologysvg: [html, css, js, react, framer],
   },
   {
     img: onlineCourse,
@@ -67,6 +84,7 @@ const works = [
       "An educational platform offering online courses with a structured layout, course previews, and interactive UI built with React.",
     projectLink: "https://shehabahmed1.github.io/onlineCourses-Reactjs/",
     technology: ["Reactjs", "Animation", "All", 2025],
+    technologysvg: [html, css, js, react],
   },
   {
     img: NoteSystem,
@@ -75,6 +93,7 @@ const works = [
       "This is a structured note-taking system that categorizes notes into distinct groups. Each category includes a note title and its corresponding content. The platform is divided into two main sections: one dedicated to adding new notes, and another designed to present the notes in an organized and visually engaging manner.",
     projectLink: "https://shehabahmed1.github.io/NoteSystem/",
     technology: ["Reactjs", "Static", "All", 2025],
+    technologysvg: [html, css, js, react],
   },
   {
     img: organica,
@@ -83,6 +102,7 @@ const works = [
       "A modern e-commerce website for organic products, featuring a clean UI, product filtering, and a responsive design.",
     projectLink: "https://shehabahmed1.github.io/Organica/",
     technology: ["Native", "Static", "All", 2025],
+    technologysvg: [html, css, js],
   },
   {
     img: realestates,
@@ -91,6 +111,7 @@ const works = [
       "A real estate listing platform showcasing properties with search and filter functionality for an enhanced user experience.",
     projectLink: "https://shehabahmed1.github.io/Real-estate/",
     technology: ["Native", "Static", "All", 2025],
+    technologysvg: [html, css, js],
   },
   {
     img: fanta,
@@ -99,6 +120,7 @@ const works = [
       "A creative landing page for Fanta, featuring engaging animations, bright visuals, and a smooth scrolling experience.",
     projectLink: "https://shehabahmed1.github.io/fantaReactjs/",
     technology: ["Reactjs", "Animation", "All", 2025],
+    technologysvg: [html, css, js, react, framer],
   },
   {
     img: resturant,
@@ -107,6 +129,7 @@ const works = [
       "A stylish restaurant website with an interactive menu, booking system, and a visually appealing design optimized for mobile.",
     projectLink: "https://shehabahmed1.github.io/restaurant/",
     technology: ["Native", "Static", "All", 2025],
+    technologysvg: [html, css, js, react],
   },
   {
     img: cryptex,
@@ -115,6 +138,7 @@ const works = [
       "A cryptocurrency dashboard providing market insights, live price updates, and a user-friendly UI.",
     projectLink: "https://shehabahmed1.github.io/cryptex/",
     technology: ["Native", "Animation", "All", 2025],
+    technologysvg: [html, css, js],
   },
   {
     img: note,
@@ -123,6 +147,7 @@ const works = [
       "A simple and efficient note-taking application with local storage support, allowing users to create, edit, and delete notes.",
     projectLink: "https://shehabahmed1.github.io/Note-App/",
     technology: ["Native", "Static", "All", 2025],
+    technologysvg: [html, css, js, react],
   },
   {
     img: kasper,
@@ -131,6 +156,7 @@ const works = [
       "A simple and efficient note-taking application with local storage support, allowing users to create, edit, and delete notes.",
     projectLink: "https://shehabahmed1.github.io/kasper/",
     technology: ["Native", "Static", "All", 2024],
+    technologysvg: [html, css, js, react],
   },
   {
     img: typing,
@@ -138,12 +164,13 @@ const works = [
     description: "A simple Game to test your speed in typing a words",
     projectLink: " https://shehabahmed1.github.io/typing-test/",
     technology: ["Native", "Static", "All", 2024],
+    technologysvg: [html, css, js, react],
   },
 ];
 
 function MyWorks() {
   const [filter, Setfilter] = useState("All");
-  const [projectnumshow, Setprojectnumshow] = useState(2);
+  const [projectnumshow, Setprojectnumshow] = useState(3);
   const [projectsfalge, Setprojectsfalge] = useState(false);
   return (
     <section className="my-works" id="work">
@@ -194,7 +221,12 @@ function ProjectUnit({ project, delaytime }) {
           <h2>{project.title}</h2>
           <p>{project.description}</p>
           <div className="technology">
-            <p> {project.technology[0]} </p>
+            <div>
+              {" "}
+              {project.technologysvg.map((ele, index) => {
+                return <img src={ele} alt="technology svg" />;
+              })}{" "}
+            </div>
             <motion.div
               className="project-link"
               onHoverStart={() => Sethover(!hover)}
@@ -277,6 +309,7 @@ function FilterList({ Setfilter }) {
 }
 
 import { useEffect } from "react";
+import { img } from "framer-motion/client";
 
 function Projects({
   work,
@@ -297,7 +330,7 @@ function Projects({
     if (projectsfalge) {
       Setprojectnumshow(filteredProjects.length);
     } else {
-      Setprojectnumshow(2);
+      Setprojectnumshow(3);
     }
   }, [projectsfalge, filteredProjects.length]); // add dependencies here
 

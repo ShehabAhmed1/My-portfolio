@@ -458,9 +458,75 @@ nav .nav-content .contact-me {
   justify-content: space-between;
   align-items: center;
 }
-.my-works .works-content .project-unit .project-info .technology p {
-  font-size: 20px;
-  text-shadow: 0 2px 5px var(--babyblue1);
+.my-works .works-content .project-unit .project-info .technology div img {
+  width: 30px;
+  height: 30px;
+  background-color: var(--white);
+  border-radius: 50%;
+  padding: 2px;
+  position: relative;
+  border: 1px solid var(--babyblue1);
+  z-index: 1;
+}
+.my-works
+  .works-content
+  .project-unit
+  .project-info
+  .technology
+  div
+  img:nth-child(1) {
+  left: 0;
+  z-index: 10;
+}
+.my-works
+  .works-content
+  .project-unit
+  .project-info
+  .technology
+  div
+  img:nth-child(2) {
+  left: -5px;
+  z-index: 9;
+}
+.my-works
+  .works-content
+  .project-unit
+  .project-info
+  .technology
+  div
+  img:nth-child(3) {
+  left: -10px;
+  z-index: 8;
+}
+.my-works
+  .works-content
+  .project-unit
+  .project-info
+  .technology
+  div
+  img:nth-child(4) {
+  left: -15px;
+  z-index: 7;
+}
+.my-works
+  .works-content
+  .project-unit
+  .project-info
+  .technology
+  div
+  img:nth-child(5) {
+  left: -20px;
+  z-index: 6;
+}
+.my-works
+  .works-content
+  .project-unit
+  .project-info
+  .technology
+  div
+  img:nth-child(6) {
+  left: -25px;
+  z-index: 5;
 }
 .my-works .works-content .project-unit .project-info .project-link {
   background-color: var(--black2);
@@ -1132,7 +1198,7 @@ footer .rights p {
 
   /**start work Component**/
   .my-works .works-content .projects {
-    grid-template-columns: auto auto auto;
+    grid-template-columns: 1fr 1fr 1fr;
   }
   /**end work Component**/
 
@@ -1185,9 +1251,9 @@ footer .rights p {
   /**end About Component**/
 
   /**start work Component**/
-  .my-works .works-content .projects {
+  /* .my-works .works-content .projects {
     grid-template-columns: auto auto auto auto;
-  }
+  } */
   /**end work Component**/
 
   /**start feedback Component**/
