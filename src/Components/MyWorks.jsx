@@ -58,7 +58,7 @@ const works = [
     img: City_library,
     title: "City_library",
     description:
-      "The City Library website is a modern, user-friendly platform...",
+      "The City Library website is a modern, user-friendly platform designed to help users easily explore books, authors, and categories. It features responsive design, real-time search functionality, animations for a smooth user experience, and utilizes React Query for efficient state management and data fetching.",
     projectLink: "https://shehabahmed1.github.io/City_Library/",
     technology: ["Reactjs", "Animation", "All", 2025],
     technologysvg: ["html", "css", "js", "react", "framer", "reactQuery"],
@@ -69,7 +69,7 @@ const works = [
     img: mostafa_001,
     title: "Mostafa Kamal Portfolio",
     description:
-      "A personal portfolio website showcasing Mostafa Kamal's work...",
+      "A personal portfolio website showcasing Mostafa Kamal's work, skills, and experience. Built using modern React components with smooth animations and clean design. The site highlights different sections including About, Projects, Skills, and Contact, making it easy for recruiters and clients to explore.",
     projectLink: "https://shehabahmed1.github.io/portfolio-mostafa-001/",
     technology: ["Reactjs", "Animation", "All", 2025],
     technologysvg: ["html", "css", "js", "react", "framer"],
@@ -79,7 +79,8 @@ const works = [
   {
     img: DarAlquran,
     title: "DarAlQuran_System",
-    description: "DarAlQuran_System is a personalized web-based tool...",
+    description:
+      "DarAlQuran_System is a personalized web-based tool for managing Quran memorization institutes. It includes features for student and teacher registration, attendance tracking, hifz follow-up, and customizable schedules. The interface is clean, responsive, and easy to navigate.",
     projectLink: "https://shehabahmed1.github.io/DarAlQuranSystem/",
     technology: ["Reactjs", "Animation", "All", 2025],
     technologysvg: ["html", "css", "js", "react", "framer"],
@@ -89,7 +90,8 @@ const works = [
   {
     img: onlineCourse,
     title: "Online Course Website",
-    description: "An educational platform offering online courses...",
+    description:
+      "An educational platform offering online courses with categorized lessons and responsive UI. Built with React, it includes course filtering, detailed course pages, and modern interactive components to enhance learning experience for students.",
     projectLink: "https://shehabahmed1.github.io/onlineCourses-Reactjs/",
     technology: ["Reactjs", "Animation", "All", 2025],
     technologysvg: ["html", "css", "js", "react"],
@@ -99,7 +101,8 @@ const works = [
   {
     img: NoteSystem,
     title: "Note-System",
-    description: "This is a structured note-taking system...",
+    description:
+      "This is a structured note-taking system designed to allow users to create, edit, and manage notes efficiently. It supports persistent storage and is optimized for both desktop and mobile views, offering a simple and elegant interface.",
     projectLink: "https://shehabahmed1.github.io/NoteSystem/",
     technology: ["Reactjs", "Static", "All", 2025],
     technologysvg: ["html", "css", "js", "react"],
@@ -109,7 +112,8 @@ const works = [
   {
     img: organica,
     title: "Organica E-commerce",
-    description: "A modern e-commerce website for organic products...",
+    description:
+      "A modern e-commerce website for organic products featuring product listing, filtering, cart functionality, and responsive UI. It demonstrates frontend skills in building real-world shopping platforms using clean HTML, CSS, and JavaScript.",
     projectLink: "https://shehabahmed1.github.io/Organica/",
     technology: ["Native", "Static", "All", 2025],
     technologysvg: ["html", "css", "js"],
@@ -119,7 +123,8 @@ const works = [
   {
     img: realestates,
     title: "Real Estates Website",
-    description: "A real estate listing platform showcasing properties...",
+    description:
+      "A real estate listing platform showcasing properties with images, descriptions, and contact information. The site is fully responsive and includes filtering options, making it user-friendly for those searching for real estate online.",
     projectLink: "https://shehabahmed1.github.io/Real-estate/",
     technology: ["Native", "Static", "All", 2025],
     technologysvg: ["html", "css", "js"],
@@ -127,19 +132,10 @@ const works = [
     endDate: "2024-11-23",
   },
   {
-    img: fanta,
-    title: "Fanta Website",
-    description: "A creative landing page for Fanta...",
-    projectLink: "https://shehabahmed1.github.io/fantaReactjs/",
-    technology: ["Reactjs", "Animation", "All", 2025],
-    technologysvg: ["html", "css", "js", "react", "framer"],
-    startDate: "2024-11-15",
-    endDate: "2024-11-17",
-  },
-  {
     img: resturant,
     title: "Restaurant Website",
-    description: "A stylish restaurant website with an interactive menu...",
+    description:
+      "A stylish restaurant website with an interactive menu, location information, and responsive layout. Built with React and modern CSS, it reflects good use of component structuring and responsive design techniques.",
     projectLink: "https://shehabahmed1.github.io/restaurant/",
     technology: ["Native", "Static", "All", 2025],
     technologysvg: ["html", "css", "js", "react"],
@@ -149,7 +145,8 @@ const works = [
   {
     img: cryptex,
     title: "Cryptex Website",
-    description: "A cryptocurrency dashboard providing market insights...",
+    description:
+      "A cryptocurrency dashboard providing market insights, coin statistics, and price updates. It features a dynamic layout and modern animations. Built with clean HTML, CSS, and JavaScript for a seamless experience.",
     projectLink: "https://shehabahmed1.github.io/cryptex/",
     technology: ["Native", "Animation", "All", 2025],
     technologysvg: ["html", "css", "js"],
@@ -159,7 +156,8 @@ const works = [
   {
     img: note,
     title: "Note App",
-    description: "A simple and efficient note-taking application...",
+    description:
+      "A simple and efficient note-taking application where users can create, update, and delete notes. It uses React for component-based structure and local storage for saving data between sessions.",
     projectLink: "https://shehabahmed1.github.io/Note-App/",
     technology: ["Native", "Static", "All", 2025],
     technologysvg: ["html", "css", "js", "react"],
@@ -169,7 +167,8 @@ const works = [
   {
     img: kasper,
     title: "personal website",
-    description: "A simple and efficient note-taking application...",
+    description:
+      "A personal website showcasing profile, services, and projects in a clean layout. Built with HTML, CSS, and JS, it focuses on simplicity and responsive design. A great example of a static one-page site.",
     projectLink: "https://shehabahmed1.github.io/kasper/",
     technology: ["Native", "Static", "All", 2024],
     technologysvg: ["html", "css", "js", "react"],
@@ -179,12 +178,24 @@ const works = [
   {
     img: typing,
     title: "typing App",
-    description: "A simple Game to test your speed in typing a words",
+    description:
+      "A simple Game to test your speed in typing a words. It measures how quickly and accurately you can type a given set of words. Built with React and styled using CSS, it gives real-time feedback and speed stats.",
     projectLink: "https://shehabahmed1.github.io/typing-test/",
     technology: ["Native", "Static", "All", 2024],
     technologysvg: ["html", "css", "js", "react"],
     startDate: "2024-9-01",
     endDate: "2024-9-3",
+  },
+  {
+    img: fanta,
+    title: "Fanta Website",
+    description:
+      "A creative landing page for Fanta with smooth animations and a vibrant design. It showcases branding and animation skills, and is built using React and Framer Motion for high-quality interactions and scroll-triggered animations.",
+    projectLink: "https://shehabahmed1.github.io/fantaReactjs/",
+    technology: ["Reactjs", "Animation", "All", 2025],
+    technologysvg: ["html", "css", "js", "react", "framer"],
+    startDate: "2024-11-15",
+    endDate: "2024-11-17",
   },
 ];
 
