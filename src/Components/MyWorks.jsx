@@ -1,9 +1,11 @@
-import React, { createContext, useContext, useState } from "react";
+import React, { createContext, useContext, useState, useEffect } from "react";
 import { motion } from "framer-motion";
 
 /**** Components from other components  *****/
 import { SectionTitle } from "./Hero";
 import { frombottom } from "./About";
+import { zoomout } from "./Hero";
+import { useData } from "../context/contextApi";
 
 /**** img ****/
 import organica from "../assets/images/organica/organica1.png";
@@ -30,6 +32,8 @@ import reactQuery from "../assets/images/react-query.svg";
 import { ImArrowUpRight2 } from "react-icons/im";
 import { FaFilter } from "react-icons/fa6";
 import { FaFilterCircleXmark } from "react-icons/fa6";
+import { FaEye } from "react-icons/fa";
+import { IoMdCloseCircle } from "react-icons/io";
 /************ animations ************/
 
 /** move right animation that happen when hover above arrow */
@@ -54,117 +58,133 @@ const works = [
     img: City_library,
     title: "City_library",
     description:
-      "The City Library website is a modern, user-friendly platform designed to provide easy access to library services, resources, and information. It allows users to search the library catalog and access digital collections such as eBooks and audiobooks. The website also features event calendars, reading recommendations, membership registration, and dedicated sections for children, teens, and researchers. With a responsive design and accessibility in mind, the site ensures that all users can explore the library’s offerings anytime, anywhere.",
-    projectLink: " https://shehabahmed1.github.io/City_Library/",
+      "The City Library website is a modern, user-friendly platform...",
+    projectLink: "https://shehabahmed1.github.io/City_Library/",
     technology: ["Reactjs", "Animation", "All", 2025],
-    technologysvg: [html, css, js, react, framer, reactQuery],
+    technologysvg: ["html", "css", "js", "react", "framer", "reactQuery"],
+    startDate: "2025-05-20",
+    endDate: "2025-05-24",
   },
   {
     img: mostafa_001,
     title: "Mostafa Kamal Portfolio",
     description:
-      "A personal portfolio website showcasing Mostafa Kamal's work. Built with React, it features a clean layout, smooth animations, and interactive UI elements. The site serves as both an educational showcase and a professional profile.",
+      "A personal portfolio website showcasing Mostafa Kamal's work...",
     projectLink: "https://shehabahmed1.github.io/portfolio-mostafa-001/",
     technology: ["Reactjs", "Animation", "All", 2025],
-    technologysvg: [html, css, js, react, framer],
+    technologysvg: ["html", "css", "js", "react", "framer"],
+    startDate: "2025-04-10",
+    endDate: "2025-04-13",
   },
   {
     img: DarAlquran,
     title: "DarAlQuran_System",
-    description:
-      "DarAlQuran_System is a personalized web-based tool I developed to serve the specific needs of my Quran memorization work. It helps me track student progress, organize internal competitions, and store a complete history of performance reports. Each student has a dedicated notes section linked by their unique ID. The system also includes a page to listen to Quran recitations by Sheikh Al-Husary — all tailored to support my workflow and make student follow-up easier and more efficient.",
+    description: "DarAlQuran_System is a personalized web-based tool...",
     projectLink: "https://shehabahmed1.github.io/DarAlQuranSystem/",
     technology: ["Reactjs", "Animation", "All", 2025],
-    technologysvg: [html, css, js, react, framer],
+    technologysvg: ["html", "css", "js", "react", "framer"],
+    startDate: "2025-03-10",
+    endDate: "2025-03-15",
   },
   {
     img: onlineCourse,
     title: "Online Course Website",
-    description:
-      "An educational platform offering online courses with a structured layout, course previews, and interactive UI built with React.",
+    description: "An educational platform offering online courses...",
     projectLink: "https://shehabahmed1.github.io/onlineCourses-Reactjs/",
     technology: ["Reactjs", "Animation", "All", 2025],
-    technologysvg: [html, css, js, react],
+    technologysvg: ["html", "css", "js", "react"],
+    startDate: "2025-02-20",
+    endDate: "2025-02-24",
   },
   {
     img: NoteSystem,
     title: "Note-System",
-    description:
-      "This is a structured note-taking system that categorizes notes into distinct groups. Each category includes a note title and its corresponding content. The platform is divided into two main sections: one dedicated to adding new notes, and another designed to present the notes in an organized and visually engaging manner.",
+    description: "This is a structured note-taking system...",
     projectLink: "https://shehabahmed1.github.io/NoteSystem/",
     technology: ["Reactjs", "Static", "All", 2025],
-    technologysvg: [html, css, js, react],
+    technologysvg: ["html", "css", "js", "react"],
+    startDate: "2025-01-10",
+    endDate: "2025-01-12",
   },
   {
     img: organica,
     title: "Organica E-commerce",
-    description:
-      "A modern e-commerce website for organic products, featuring a clean UI, product filtering, and a responsive design.",
+    description: "A modern e-commerce website for organic products...",
     projectLink: "https://shehabahmed1.github.io/Organica/",
     technology: ["Native", "Static", "All", 2025],
-    technologysvg: [html, css, js],
+    technologysvg: ["html", "css", "js"],
+    startDate: "2025-1-22",
+    endDate: "2025-1-25",
   },
   {
     img: realestates,
     title: "Real Estates Website",
-    description:
-      "A real estate listing platform showcasing properties with search and filter functionality for an enhanced user experience.",
+    description: "A real estate listing platform showcasing properties...",
     projectLink: "https://shehabahmed1.github.io/Real-estate/",
     technology: ["Native", "Static", "All", 2025],
-    technologysvg: [html, css, js],
+    technologysvg: ["html", "css", "js"],
+    startDate: "2024-11-20",
+    endDate: "2024-11-23",
   },
   {
     img: fanta,
     title: "Fanta Website",
-    description:
-      "A creative landing page for Fanta, featuring engaging animations, bright visuals, and a smooth scrolling experience.",
+    description: "A creative landing page for Fanta...",
     projectLink: "https://shehabahmed1.github.io/fantaReactjs/",
     technology: ["Reactjs", "Animation", "All", 2025],
-    technologysvg: [html, css, js, react, framer],
+    technologysvg: ["html", "css", "js", "react", "framer"],
+    startDate: "2024-11-15",
+    endDate: "2024-11-17",
   },
   {
     img: resturant,
     title: "Restaurant Website",
-    description:
-      "A stylish restaurant website with an interactive menu, booking system, and a visually appealing design optimized for mobile.",
+    description: "A stylish restaurant website with an interactive menu...",
     projectLink: "https://shehabahmed1.github.io/restaurant/",
     technology: ["Native", "Static", "All", 2025],
-    technologysvg: [html, css, js, react],
+    technologysvg: ["html", "css", "js", "react"],
+    startDate: "2024-10-10",
+    endDate: "2024-10-15",
   },
   {
     img: cryptex,
     title: "Cryptex Website",
-    description:
-      "A cryptocurrency dashboard providing market insights, live price updates, and a user-friendly UI.",
+    description: "A cryptocurrency dashboard providing market insights...",
     projectLink: "https://shehabahmed1.github.io/cryptex/",
     technology: ["Native", "Animation", "All", 2025],
-    technologysvg: [html, css, js],
+    technologysvg: ["html", "css", "js"],
+    startDate: "2025-01-1",
+    endDate: "2025-01-2",
   },
   {
     img: note,
     title: "Note App",
-    description:
-      "A simple and efficient note-taking application with local storage support, allowing users to create, edit, and delete notes.",
+    description: "A simple and efficient note-taking application...",
     projectLink: "https://shehabahmed1.github.io/Note-App/",
     technology: ["Native", "Static", "All", 2025],
-    technologysvg: [html, css, js, react],
+    technologysvg: ["html", "css", "js", "react"],
+    startDate: "2024-9-20",
+    endDate: "2024-9-23",
   },
   {
     img: kasper,
     title: "personal website",
-    description:
-      "A simple and efficient note-taking application with local storage support, allowing users to create, edit, and delete notes.",
+    description: "A simple and efficient note-taking application...",
     projectLink: "https://shehabahmed1.github.io/kasper/",
     technology: ["Native", "Static", "All", 2024],
-    technologysvg: [html, css, js, react],
+    technologysvg: ["html", "css", "js", "react"],
+    startDate: "2024-9-15",
+    endDate: "2024-9-18",
   },
   {
     img: typing,
     title: "typing App",
     description: "A simple Game to test your speed in typing a words",
-    projectLink: " https://shehabahmed1.github.io/typing-test/",
+    projectLink: "https://shehabahmed1.github.io/typing-test/",
     technology: ["Native", "Static", "All", 2024],
-    technologysvg: [html, css, js, react],
+    technologysvg: ["html", "css", "js", "react"],
+    startDate: "2024-9-01",
+    endDate: "2024-9-3",
   },
 ];
 
@@ -172,6 +192,7 @@ function MyWorks() {
   const [filter, Setfilter] = useState("All");
   const [projectnumshow, Setprojectnumshow] = useState(3);
   const [projectsfalge, Setprojectsfalge] = useState(false);
+  const { projectDetails } = useData();
   return (
     <section className="my-works" id="work">
       <div className="main-container">
@@ -187,6 +208,16 @@ function MyWorks() {
             projectnumshow={projectnumshow}
             Setprojectnumshow={Setprojectnumshow}
           />
+          {projectDetails && (
+            <DetailsCard
+              title={projectDetails.title}
+              description={projectDetails.description}
+              technologies={projectDetails.technologysvg}
+              liveUrl={projectDetails.projectLink}
+              startDate={projectDetails.startDate}
+              endDate={projectDetails.endDate}
+            />
+          )}
           <div className="movement">
             <button
               className="more"
@@ -206,28 +237,57 @@ function MyWorks() {
 /*** the unit of the project  */
 function ProjectUnit({ project, delaytime }) {
   const [hover, Sethover] = useState(false);
+  const { setProjectDetails } = useData();
   return (
     <motion.div
-      className="project-unit"
+      className={`project-unit ${hover && "active"}`}
       variants={frombottom(0.5, delaytime)}
       initial="initial"
       whileInView="animate"
+      onHoverStart={() => Sethover(true)}
+      onHoverEnd={() => Sethover(false)}
     >
+      {hover && (
+        <motion.div
+          className="eye-icon"
+          initial={{
+            scale: 0,
+            x: 0,
+            y: 0,
+            opacity: 0,
+          }}
+          animate={{
+            scale: 1,
+            x: -25,
+            y: -25,
+            opacity: 1,
+            transition: {
+              duration: 0.3,
+            },
+          }}
+          onClick={() => {
+            setProjectDetails(project);
+          }}
+        >
+          <FaEye />
+        </motion.div>
+      )}
+
       <figure>
         <img src={project.img} alt={project.title} />
       </figure>
       <div className="project-info">
         <div className="info">
           <h2>{project.title}</h2>
-          <p>{project.description}</p>
+          {/* <p>{project.description}</p> */}
           <div className="technology">
-            <div>
+            {/* <div>
               {" "}
               {project.technologysvg.map((ele, index) => {
                 return <img src={ele} alt="technology svg" />;
               })}{" "}
-            </div>
-            <motion.div
+            </div> */}
+            {/* <motion.div
               className="project-link"
               onHoverStart={() => Sethover(!hover)}
               onHoverEnd={() => Sethover(!hover)}
@@ -241,7 +301,7 @@ function ProjectUnit({ project, delaytime }) {
               >
                 <ImArrowUpRight2 />
               </motion.a>
-            </motion.div>
+            </motion.div> */}
           </div>
         </div>
       </div>
@@ -308,9 +368,6 @@ function FilterList({ Setfilter }) {
   );
 }
 
-import { useEffect } from "react";
-import { img } from "framer-motion/client";
-
 function Projects({
   work,
   filter,
@@ -345,5 +402,59 @@ function Projects({
     </div>
   );
 }
+
+/************ details **********/
+const DetailsCard = ({
+  title,
+  description,
+  technologies,
+  liveUrl,
+  startDate,
+  endDate,
+}) => {
+  const { setProjectDetails } = useData();
+  return (
+    <div className="project-card">
+      <div
+        className="close"
+        onClick={() => {
+          setProjectDetails("");
+        }}
+      >
+        <IoMdCloseCircle />
+      </div>
+      <div className="card-content">
+        <h3 className="card-title">{title}</h3>
+        <p className="card-description">{description}</p>
+
+        <div className="project-dates">
+          <span className="date-label">Duration:</span>
+          <span className="date-range">
+            {startDate} / {endDate}
+          </span>
+        </div>
+
+        <div className="technologies">
+          {technologies.map((tech, index) => (
+            <span key={index} className="tech-tag">
+              {tech}
+            </span>
+          ))}
+        </div>
+
+        <div className="card-buttons">
+          <a
+            href={liveUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn primary-btn"
+          >
+            Live Demo
+          </a>
+        </div>
+      </div>
+    </div>
+  );
+};
 
 export { MyWorks, works };

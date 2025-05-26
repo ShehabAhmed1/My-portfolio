@@ -138,4 +138,4 @@ function Herobanner({ banner }) {
   );
 }
 
-export { Hero, SectionTitle, fromright };
+export { Hero, SectionTitle, fromright, zoomout };

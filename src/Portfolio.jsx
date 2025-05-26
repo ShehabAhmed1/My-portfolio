@@ -9,19 +9,22 @@ import Pricing from "./Components/Pricing";
 import { Contact } from "./Components/Contact";
 import { Questions } from "./Components/Questions";
 import { Footer } from "./Components/Footer";
+import { PortfolioProvider } from "./context/contextApi";
 function Portfolio() {
   return (
-    <main className="Portfolio">
-      <NavBar />
-      <Hero />
-      <About />
-      <MyWorks />
-      <Feedback />
-      <Pricing />
-      <Questions />
-      <Contact />
-      <Footer />
-    </main>
+    <PortfolioProvider>
+      <main className="Portfolio">
+        <NavBar />
+        <Hero />
+        <About />
+        <MyWorks />
+        <Feedback />
+        <Pricing />
+        <Questions />
+        <Contact />
+        <Footer />
+      </main>
+    </PortfolioProvider>
   );
 }
 
