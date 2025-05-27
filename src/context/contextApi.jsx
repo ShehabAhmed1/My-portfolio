@@ -18,7 +18,7 @@ export const PortfolioProvider = ({ children }) => {
 export const useData = () => {
   const context = useContext(PortfolioContext);
   if (!context) {
-    throw new Error("useData must be used within a PortfolioProvider");
+    throw new Error("useData must be used within a portfolio_");
   }
   return context;
 };
