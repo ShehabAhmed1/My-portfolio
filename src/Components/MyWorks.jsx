@@ -257,6 +257,9 @@ function ProjectUnit({ project, delaytime }) {
       whileInView="animate"
       onHoverStart={() => Sethover(true)}
       onHoverEnd={() => Sethover(false)}
+      onTap={() => {
+        Sethover(!hover);
+      }}
     >
       {hover && (
         <motion.div
@@ -276,7 +279,7 @@ function ProjectUnit({ project, delaytime }) {
               duration: 0.3,
             },
           }}
-          onClick={() => {
+          onTap={() => {
             setProjectDetails(project);
           }}
         >
