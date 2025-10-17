@@ -1,0 +1,200 @@
+:root {
+  /***colors***/
+  --bodybg: #18181b;
+  --babyblue2: #3099ca;
+  --babyblue1: #37bcf7;
+  --black1tans_: #26262882;
+  --black1: #262628;
+  --black2: #18181b;
+  --black3: #0d0d0dad;
+  --textcolor: #c5cacd;
+  --white: #f1f1f3;
+  --white2: #f1f1f39a;
+  --onlineColor: #40e2af;
+  --unknow: #c2cfd4;
+  --gradient-primary: linear-gradient(
+    135deg,
+    var(--babyblue1),
+    var(--babyblue2)
+  );
+  --gradient-secondary: linear-gradient(135deg, var(--black1), var(--black2));
+  --shadow-light: 0 4px 20px rgba(55, 188, 247, 0.1);
+  --shadow-hover: 0 8px 32px rgba(55, 188, 247, 0.2);
+  --border-radius: 16px;
+  --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+
+  /**** typo ****/
+  --fw3: 300;
+  --fw4: 400;
+  --fw5: 500;
+  --fw6: 600;
+  --fw7: 700;
+
+  /**** space ***/
+  --sectionpadding: 80px 0;
+}
+
+/* ===================== Project Page ===================== */
+
+.Project_page .project-details {
+  background: var(--bodybg);
+  font-family: Arial, sans-serif;
+  color: var(--textcolor);
+  min-height: 100vh;
+}
+
+.Project_page .project-details .content {
+  padding-top: 50px;
+}
+
+.Project_page .back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 20px;
+  color: var(--white2);
+  text-decoration: none;
+  transition: var(--transition);
+}
+.Project_page .back-link:hover {
+  color: var(--babyblue1);
+}
+
+.Project_page .header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+.Project_page .subtitle {
+  color: var(--babyblue2);
+  font-weight: var(--fw6);
+  margin-bottom: 0.5rem;
+}
+.Project_page .title {
+  font-size: 2.5rem;
+  font-weight: var(--fw7);
+  margin-bottom: 1rem;
+}
+.Project_page .date {
+  color: var(--white2);
+}
+
+.Project_page .cover img {
+  width: 100%;
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-light);
+  margin-bottom: 3rem;
+}
+
+.Project_page .overview,
+.Project_page .tech-stack,
+.Project_page .features,
+.Project_page .challenges,
+.Project_page .footer-links {
+  margin-bottom: 3rem;
+}
+.Project_page .section-title {
+  font-size: 1.5rem;
+  font-weight: var(--fw6);
+  border-left: 4px solid var(--babyblue1);
+  padding-left: 1rem;
+  margin-bottom: 1rem;
+}
+.Project_page .section-text {
+  color: var(--textcolor);
+  line-height: 1.6;
+  margin-left: 2rem;
+}
+
+.Project_page .tech-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 1rem;
+}
+.Project_page .tech-card {
+  background: var(--black1);
+  border: 1px solid var(--black1tans_);
+  border-radius: var(--border-radius);
+  text-align: center;
+  padding: 1rem;
+  transition: var(--transition);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.Project_page .tech-card:hover {
+  box-shadow: var(--shadow-hover);
+  border-color: var(--babyblue1);
+}
+.Project_page .tech-card img {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 0.5rem;
+}
+
+.Project_page .features li {
+  display: flex;
+  align-items: start;
+  gap: 0.5rem;
+  margin: 1rem 0 1rem 2rem;
+  color: var(--textcolor);
+  position: relative;
+}
+.Project_page .challenges li {
+  border-bottom: 1px solid var(--black1tans_);
+  margin: 1rem 0 1rem 2rem;
+  line-height: 1.6;
+  position: relative;
+  padding-bottom: 1rem;
+}
+.Project_page .challenges li:last-child {
+  border-bottom: none;
+}
+.Project_page .challenges li::before,
+.Project_page .features li::before {
+  content: "";
+  position: absolute;
+  left: -1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: var(--babyblue1);
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+.Project_page .challenges li::before {
+  top: 12px;
+}
+.Project_page .footer-links {
+  margin-top: 4rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--black1tans_);
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+.Project_page .btn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  border-radius: 50px;
+  font-weight: var(--fw5);
+  text-decoration: none;
+  transition: var(--transition);
+}
+.Project_page .btn.primary {
+  background: var(--gradient-primary);
+  color: var(--white);
+}
+.Project_page .btn.primary:hover {
+  opacity: 0.9;
+}
+.Project_page .btn.secondary {
+  background: var(--gradient-secondary);
+  color: var(--white);
+}
+.Project_page .btn.secondary:hover {
+  opacity: 0.85;
+}

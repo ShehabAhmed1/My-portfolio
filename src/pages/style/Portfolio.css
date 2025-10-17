@@ -40,8 +40,8 @@ html {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  list-style: none;
   text-transform: capitalize;
+  list-style: none;
   text-decoration: none;
 }
 
@@ -433,7 +433,6 @@ nav .nav-content .contact-me {
 .my-works .works-content .projects {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: auto auto;
   gap: 20px;
   transition: all 0.5s linear;
 }
@@ -476,6 +475,7 @@ nav .nav-content .contact-me {
   position: absolute;
   top: 50%;
   left: 50%;
+  transform: translate(-50%, -50%);
 }
 .my-works .works-content .project-unit img {
   width: 100%;
@@ -783,6 +783,8 @@ nav .nav-content .contact-me {
 .feedback-content .feed-img img,
 .feedback-content .feed-videos video {
   width: 100%;
+  height: 300px;
+  object-fit: cover;
   border-radius: 10px;
 }
 
@@ -1165,6 +1167,7 @@ form label textarea:focus {
 /***********  start footer Component ***************/
 footer {
   padding: var(--sectionpadding);
+  position: relative;
 }
 footer .footer-content {
   display: flex;
@@ -1201,8 +1204,9 @@ footer .footer-content .links ul li a:hover {
   color: var(--babyblue1);
 }
 footer .rights {
-  position: relative;
-  top: 50px;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
   background-color: var(--black1);
 }
 footer .rights p {
@@ -1231,7 +1235,7 @@ footer .rights p {
 
   /**start work Component**/
   .my-works .works-content .projects {
-    grid-template-columns: auto auto;
+    grid-template-columns: 1fr 1fr;
   }
 
   /* .more {

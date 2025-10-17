@@ -1,0 +1,31 @@
+import { useState } from "react";
+import "./style/Portfolio.css";
+import { NavBar } from "../Components/NavBar";
+import { Hero } from "../Components/Hero";
+import { About } from "../Components/About";
+import { MyWorks } from "../Components/MyWorks";
+import { Feedback } from "../Components/Feedback";
+import Pricing from "../Components/Pricing";
+import { Contact } from "../Components/Contact";
+import { Questions } from "../Components/Questions";
+import { Footer } from "../Components/Footer";
+import { PortfolioProvider } from "../context/contextApi";
+function Portfolio() {
+  return (
+    <PortfolioProvider>
+      <div className="Portfolio" id="Portfolio">
+        <NavBar />
+        <Hero />
+        <About />
+        <MyWorks />
+        <Feedback />
+        <Pricing />
+        <Questions />
+        <Contact />
+        <Footer />
+      </div>
+    </PortfolioProvider>
+  );
+}
+
+export default Portfolio;

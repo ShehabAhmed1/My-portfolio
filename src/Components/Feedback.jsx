@@ -8,11 +8,10 @@ import { ContactMe } from "../Components/Contact";
 /**** img ****/
 import mostafa_001 from "../assets/feedbacks/mostafa_001/mostafa-001.png";
 import feed_mostafa_001I from "../assets/feedbacks/mostafa_001/feed_mostafa_001.jpg";
-//import feed_mostafa_001V from "../assets/feedbacks/mostafa_001/test.mp4";
+import feed_mostafa_001_2 from "../assets/feedbacks/mostafa_001/feed_mostafa_001_2.jpg";
 
 /*** icons */
 import { TbStarFilled } from "react-icons/tb";
-import { img } from "framer-motion/client";
 
 /*** options ***/
 const feedback = [
@@ -22,8 +21,7 @@ const feedback = [
     img: mostafa_001,
     feedbackText:
       " the work was more than excellent. After he designed my website, I shared it on social media, and to my surprise, my first client came through because he loved the website design! Truly professional work — I highly recommend him to anyone looking for a standout website.",
-    feedbackImg: feed_mostafa_001I,
-    //feedbackVideos: feed_mostafa_001V,
+    feedbackImg: [feed_mostafa_001I, feed_mostafa_001_2],
   },
 ];
 
@@ -34,7 +32,7 @@ function Feedback() {
         <SectionTitle Title="what our customers say" />
         <div className="feedback-content">
           <FeedbackReviews />
-          <FeedbackImg />/{" "}
+          <FeedbackImg />
         </div>
       </div>
     </section>
@@ -60,31 +58,17 @@ function FeedbackImg() {
       <h1 className="feed-title">images</h1>
       <div className="feed-img">
         {feedback.map((feed) => {
-          return feed.feedbackImg != "" ? (
-            <img
-              key={feed.id}
-              src={feed.feedbackImg}
-              alt="review with images"
-            />
-          ) : (
-            ""
-          );
-        })}
-      </div>
-    </>
-  );
-}
-function FeedbackVideos() {
-  return (
-    <>
-      <h1 className="feed-title">videos</h1>
-      <div className="feed-videos">
-        {feedback.map((feed) => {
-          return feed.feedbackVideos != "" ? (
-            <video key={feed.id} src={feed.feedbackVideos} controls muted />
-          ) : (
-            ""
-          );
+          return feed.feedbackImg != ""
+            ? feed.feedbackImg.map((img, index) => {
+                return (
+                  <img
+                    key={feed.id + index}
+                    src={img}
+                    alt="review with images"
+                  />
+                );
+              })
+            : "";
         })}
       </div>
     </>
