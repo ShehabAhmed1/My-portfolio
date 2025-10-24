@@ -12,14 +12,154 @@ import typing from "../assets/images/typing/typing.png";
 import NoteSystem from "../assets/images/NoteSystem/NoteSystem.png";
 import mostafa_001 from "../assets/images/Mostafa_001/mostafa_001.png";
 import City_library from "../assets/images/City-Library/city_library.png";
+import Educational_platform from "../assets/images/Educational_platform/Educational_platform.png";
 import css from "../assets/images/css3.svg";
 import js from "../assets/images/javascript.svg";
 import react from "../assets/images/react.svg";
 import framer from "../assets/images/framer-motion.svg";
 import html from "../assets/images/html-5.svg";
 import reactQuery from "../assets/images/react-query.svg";
-
+import reactRouter from "../assets/images/react-router.svg";
+import tailwindcss from "../assets/images/tailwindcss.svg";
 const works = [
+  {
+    img: Educational_platform,
+    title: "Educational Platform",
+    description:
+      "The Educational Platform is an interactive learning website designed to connect students with educational resources, instructors, and courses in an engaging and modern way. It features a responsive design, smooth animations, and a clean interface that ensures an enjoyable learning experience. Built with React, it provides fast navigation, dynamic content loading, and scalability for future updates.",
+    projectLink: "https://educational-platform-alpha.vercel.app/",
+    technology: ["Reactjs", "Animation", "All", 2025],
+    technologysvg: [
+      { name: "html", logo: html },
+      { name: "css", logo: css },
+      { name: "js", logo: js },
+      { name: "react", logo: react },
+      { name: "framer", logo: framer },
+      { name: "reactRouter", logo: reactRouter },
+      { name: "tailwindcss", logo: tailwindcss },
+    ],
+    startDate: "2025-10-15",
+    endDate: "2025-10-21",
+    features: [
+      "Responsive and visually appealing interface with smooth transitions.",
+      "Dynamic navigation and routing using React Router.",
+      "Scroll-triggered animations that enhance the user experience.",
+      "Clean and modular component structure for scalability.",
+      "Modern educational layout with clear course and category sections.",
+    ],
+    challengesAndSolutions: [
+      {
+        challenge:
+          "Creating scroll-triggered animations that sync with the page movement.",
+        solution:
+          "Used Framer Motion with React Intersection Observer to achieve precise scroll-based effects.",
+      },
+      {
+        challenge: "Maintaining responsiveness across multiple screen sizes.",
+        solution:
+          "Utilized flexible CSS Grid and media queries to ensure consistent design on all devices.",
+      },
+    ],
+  },
+  {
+    img: mostafa_001,
+    title: "Mostafa Kamal Portfolio",
+    description:
+      "A personal portfolio website showcasing Mostafa Kamal's work, skills, and experience. Built using modern React components with smooth animations and clean design. The site highlights different sections including About, Projects, Skills, and Contact, making it easy for recruiters and clients to explore.",
+    projectLink: "https://shehabahmed1.github.io/portfolio-mostafa-001/",
+    technology: ["Reactjs", "Animation", "All", 2025],
+    technologysvg: [
+      { name: "html", logo: html },
+      { name: "css", logo: css },
+      { name: "js", logo: js },
+      { name: "react", logo: react },
+      { name: "framer", logo: framer },
+      { name: "tailwindcss", logo: tailwindcss },
+    ],
+    startDate: "2025-04-10",
+    endDate: "2025-04-13",
+    features: [
+      "Clean and professional design.",
+      "Smooth scrolling and animations using Framer Motion.",
+      "Fully responsive layout for all devices.",
+      "Organized sections for About, Projects, Skills, and Contact.",
+    ],
+    challengesAndSolutions: [
+      {
+        challenge: "Creating a unique portfolio layout without clutter.",
+        solution:
+          "Used grid-based design and consistent spacing with Tailwind CSS.",
+      },
+      {
+        challenge: "Ensuring fast load time despite animations.",
+        solution: "Optimized images and used lazy loading where possible.",
+      },
+    ],
+  },
+  {
+    img: onlineCourse,
+    title: "Online Course Website",
+    description:
+      "An educational platform offering online courses with categorized lessons and responsive UI. Built with React, it includes course filtering, detailed course pages, and modern interactive components to enhance learning experience for students.",
+    projectLink: "https://shehabahmed1.github.io/onlineCourses-Reactjs/",
+    technology: ["Reactjs", "Animation", "All", 2025],
+    technologysvg: [
+      { name: "html", logo: html },
+      { name: "css", logo: css },
+      { name: "js", logo: js },
+      { name: "react", logo: react },
+    ],
+    startDate: "2025-02-20",
+    endDate: "2025-02-24",
+    features: [
+      "Dynamic course listing with category filters.",
+      "Detailed course view with responsive layout.",
+      "User-friendly navigation between lessons.",
+      "Clean, interactive design.",
+    ],
+    challengesAndSolutions: [
+      {
+        challenge: "Organizing dynamic course data.",
+        solution: "Created reusable components for course cards and pages.",
+      },
+      {
+        challenge: "Keeping performance smooth across many courses.",
+        solution:
+          "Used React state efficiently and avoided unnecessary re-renders.",
+      },
+    ],
+  },
+  {
+    img: organica,
+    title: "Organica E-commerce",
+    description:
+      "A modern e-commerce website for organic products featuring product listing, filtering, cart functionality, and responsive UI. It demonstrates frontend skills in building real-world shopping platforms using clean HTML, CSS, and JavaScript.",
+    projectLink: "https://shehabahmed1.github.io/Organica/",
+    technology: ["Native", "Static", "All", 2025],
+    technologysvg: [
+      { name: "html", logo: html },
+      { name: "css", logo: css },
+      { name: "js", logo: js },
+    ],
+    startDate: "2025-1-22",
+    endDate: "2025-1-25",
+    features: [
+      "Product listing with filter and sorting options.",
+      "Shopping cart and checkout flow.",
+      "Fully responsive design.",
+      "Attractive product presentation.",
+    ],
+    challengesAndSolutions: [
+      {
+        challenge: "Managing dynamic cart updates without a framework.",
+        solution: "Used modular JavaScript and DOM manipulation efficiently.",
+      },
+      {
+        challenge: "Designing responsive product cards.",
+        solution: "Used CSS Grid and Flexbox with media queries.",
+      },
+    ],
+  },
   {
     img: City_library,
     title: "City_library",
@@ -52,40 +192,6 @@ const works = [
       {
         challenge: "Maintaining performance with dynamic search.",
         solution: "Implemented debouncing and optimized state updates.",
-      },
-    ],
-  },
-  {
-    img: mostafa_001,
-    title: "Mostafa Kamal Portfolio",
-    description:
-      "A personal portfolio website showcasing Mostafa Kamal's work, skills, and experience. Built using modern React components with smooth animations and clean design. The site highlights different sections including About, Projects, Skills, and Contact, making it easy for recruiters and clients to explore.",
-    projectLink: "https://shehabahmed1.github.io/portfolio-mostafa-001/",
-    technology: ["Reactjs", "Animation", "All", 2025],
-    technologysvg: [
-      { name: "html", logo: html },
-      { name: "css", logo: css },
-      { name: "js", logo: js },
-      { name: "react", logo: react },
-      { name: "framer", logo: framer },
-    ],
-    startDate: "2025-04-10",
-    endDate: "2025-04-13",
-    features: [
-      "Clean and professional design.",
-      "Smooth scrolling and animations using Framer Motion.",
-      "Fully responsive layout for all devices.",
-      "Organized sections for About, Projects, Skills, and Contact.",
-    ],
-    challengesAndSolutions: [
-      {
-        challenge: "Creating a unique portfolio layout without clutter.",
-        solution:
-          "Used grid-based design and consistent spacing with Tailwind CSS.",
-      },
-      {
-        challenge: "Ensuring fast load time despite animations.",
-        solution: "Optimized images and used lazy loading where possible.",
       },
     ],
   },
@@ -125,39 +231,6 @@ const works = [
     ],
   },
   {
-    img: onlineCourse,
-    title: "Online Course Website",
-    description:
-      "An educational platform offering online courses with categorized lessons and responsive UI. Built with React, it includes course filtering, detailed course pages, and modern interactive components to enhance learning experience for students.",
-    projectLink: "https://shehabahmed1.github.io/onlineCourses-Reactjs/",
-    technology: ["Reactjs", "Animation", "All", 2025],
-    technologysvg: [
-      { name: "html", logo: html },
-      { name: "css", logo: css },
-      { name: "js", logo: js },
-      { name: "react", logo: react },
-    ],
-    startDate: "2025-02-20",
-    endDate: "2025-02-24",
-    features: [
-      "Dynamic course listing with category filters.",
-      "Detailed course view with responsive layout.",
-      "User-friendly navigation between lessons.",
-      "Clean, interactive design.",
-    ],
-    challengesAndSolutions: [
-      {
-        challenge: "Organizing dynamic course data.",
-        solution: "Created reusable components for course cards and pages.",
-      },
-      {
-        challenge: "Keeping performance smooth across many courses.",
-        solution:
-          "Used React state efficiently and avoided unnecessary re-renders.",
-      },
-    ],
-  },
-  {
     img: NoteSystem,
     title: "Note-System",
     description:
@@ -190,37 +263,7 @@ const works = [
       },
     ],
   },
-  {
-    img: organica,
-    title: "Organica E-commerce",
-    description:
-      "A modern e-commerce website for organic products featuring product listing, filtering, cart functionality, and responsive UI. It demonstrates frontend skills in building real-world shopping platforms using clean HTML, CSS, and JavaScript.",
-    projectLink: "https://shehabahmed1.github.io/Organica/",
-    technology: ["Native", "Static", "All", 2025],
-    technologysvg: [
-      { name: "html", logo: html },
-      { name: "css", logo: css },
-      { name: "js", logo: js },
-    ],
-    startDate: "2025-1-22",
-    endDate: "2025-1-25",
-    features: [
-      "Product listing with filter and sorting options.",
-      "Shopping cart and checkout flow.",
-      "Fully responsive design.",
-      "Attractive product presentation.",
-    ],
-    challengesAndSolutions: [
-      {
-        challenge: "Managing dynamic cart updates without a framework.",
-        solution: "Used modular JavaScript and DOM manipulation efficiently.",
-      },
-      {
-        challenge: "Designing responsive product cards.",
-        solution: "Used CSS Grid and Flexbox with media queries.",
-      },
-    ],
-  },
+
   {
     img: realestates,
     title: "Real Estates Website",
@@ -285,101 +328,6 @@ const works = [
     ],
   },
   {
-    img: cryptex,
-    title: "Cryptex Website",
-    description:
-      "A cryptocurrency dashboard providing market insights, coin statistics, and price updates. It features a dynamic layout and modern animations. Built with clean HTML, CSS, and JavaScript for a seamless experience.",
-    projectLink: "https://shehabahmed1.github.io/cryptex/",
-    technology: ["Native", "Animation", "All", 2025],
-    technologysvg: [
-      { name: "html", logo: html },
-      { name: "css", logo: css },
-      { name: "js", logo: js },
-    ],
-    startDate: "2025-01-1",
-    endDate: "2025-01-2",
-    features: [
-      "Real-time cryptocurrency data display.",
-      "Smooth animations and transitions.",
-      "Modern, futuristic design.",
-      "User-friendly dashboard layout.",
-    ],
-    challengesAndSolutions: [
-      {
-        challenge: "Displaying dynamic data updates smoothly.",
-        solution: "Optimized DOM updates and used CSS transitions.",
-      },
-      {
-        challenge: "Designing an engaging yet clear interface.",
-        solution: "Used dark theme with color-coded highlights.",
-      },
-    ],
-  },
-  {
-    img: note,
-    title: "Note App",
-    description:
-      "A simple and efficient note-taking application where users can create, update, and delete notes. It uses React for component-based structure and local storage for saving data between sessions.",
-    projectLink: "https://shehabahmed1.github.io/Note-App/",
-    technology: ["Native", "Static", "All", 2025],
-    technologysvg: [
-      { name: "html", logo: html },
-      { name: "css", logo: css },
-      { name: "js", logo: js },
-      { name: "react", logo: react },
-    ],
-    startDate: "2024-9-20",
-    endDate: "2024-9-23",
-    features: [
-      "Add, update, and delete notes.",
-      "Data persistence using localStorage.",
-      "Responsive and minimal design.",
-      "Fast and intuitive interface.",
-    ],
-    challengesAndSolutions: [
-      {
-        challenge: "Keeping state and localStorage in sync.",
-        solution:
-          "Used useEffect hook to update storage whenever state changes.",
-      },
-      {
-        challenge: "Maintaining simplicity in design.",
-        solution: "Applied consistent layout and minimal color usage.",
-      },
-    ],
-  },
-  {
-    img: kasper,
-    title: "personal website",
-    description:
-      "A personal website showcasing profile, services, and projects in a clean layout. Built with HTML, CSS, and JS, it focuses on simplicity and responsive design. A great example of a static one-page site.",
-    projectLink: "https://shehabahmed1.github.io/kasper/",
-    technology: ["Native", "Static", "All", 2024],
-    technologysvg: [
-      { name: "html", logo: html },
-      { name: "css", logo: css },
-      { name: "js", logo: js },
-    ],
-    startDate: "2024-9-15",
-    endDate: "2024-9-18",
-    features: [
-      "Single-page responsive layout.",
-      "Modern portfolio design.",
-      "Smooth scrolling and transitions.",
-      "Highlight sections for projects and services.",
-    ],
-    challengesAndSolutions: [
-      {
-        challenge: "Building a full portfolio without frameworks.",
-        solution: "Used pure HTML, CSS, and JS with reusable components logic.",
-      },
-      {
-        challenge: "Making it mobile-friendly.",
-        solution: "Used flexible units and CSS media queries.",
-      },
-    ],
-  },
-  {
     img: typing,
     title: "typing App",
     description:
@@ -408,40 +356,6 @@ const works = [
       {
         challenge: "Preventing lag when typing quickly.",
         solution: "Optimized re-render frequency and used key event listeners.",
-      },
-    ],
-  },
-  {
-    img: fanta,
-    title: "Fanta Website",
-    description:
-      "A creative landing page for Fanta with smooth animations and a vibrant design. It showcases branding and animation skills, and is built using React and Framer Motion for high-quality interactions and scroll-triggered animations.",
-    projectLink: "https://shehabahmed1.github.io/fantaReactjs/",
-    technology: ["Reactjs", "Animation", "All", 2025],
-    technologysvg: [
-      { name: "html", logo: html },
-      { name: "css", logo: css },
-      { name: "js", logo: js },
-      { name: "react", logo: react },
-      { name: "framer", logo: framer },
-    ],
-    startDate: "2024-11-15",
-    endDate: "2024-11-17",
-    features: [
-      "High-quality scroll-based animations.",
-      "Vibrant and eye-catching visuals.",
-      "Smooth performance and transitions.",
-      "Strong branding consistency.",
-    ],
-    challengesAndSolutions: [
-      {
-        challenge: "Timing animations perfectly with scroll.",
-        solution: "Used Framer Motion’s scroll-based animation controls.",
-      },
-      {
-        challenge: "Balancing visual appeal with performance.",
-        solution:
-          "Optimized assets and avoided overuse of heavy animation effects.",
       },
     ],
   },
